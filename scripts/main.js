@@ -376,6 +376,8 @@ BusinessGraph.prototype.do_toggleconsole = function(){
 };
 
 BusinessGraph.prototype.do_togglepivot = function(){
+	maindiv=document.getElementById('maindiv'); 
+	maindiv.style.height = "100%";
 	this.activateMenuItems('togglepivot');	
 	var pp = document.getElementById('punchcardframe');
 	pp.src="";
