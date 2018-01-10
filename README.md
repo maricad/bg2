@@ -1,3 +1,3 @@
 # Firebase business graphs
 
-[test](https://rawgit.com/maricad/master/bg2/index.html)
+[test](https://rawgit.com/maricad/bg2/master/index.html)
