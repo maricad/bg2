@@ -7,7 +7,7 @@ function Com(who){
 	  // Initialize Firebase
   this.config = {
     apiKey: "AIzaSyDD7IqL8SLp93E1aVGRhnvHYCK9ZiZQ_xk",
-    authDomain: "maricardcarros.firebaseapp.com",
+    authDomain: "rawgit.com",
     databaseURL: "https://maricardcarros.firebaseio.com",
     projectId: "maricardcarros",
     storageBucket: "maricardcarros.appspot.com",
