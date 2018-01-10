@@ -381,7 +381,10 @@ BusinessGraph.prototype.do_togglepivot = function(){
 	this.activateMenuItems('togglepivot');	
 	var pp = document.getElementById('punchcardframe');
 	pp.src="";
+	var p = document.getElementById('pivot');
+	p.style.height = "100%";
 	var pf = document.getElementById('pivotframe');
+	pf.style.height = "100%";
 	if(pf.src.indexOf("pivot")!=-1){
 		return;
 	}
