@@ -20,7 +20,6 @@
         <!-- PivotTable.js libs from ../dist -->
         <link rel="stylesheet" type="text/css" href="pivot.css">
         <script type="text/javascript" src="pivot.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
 		<script type="text/javascript" src="com.js"></script>
         <style>
             body {font-family: Verdana;}			
@@ -600,15 +599,7 @@ var justPivot = function() {
 		.on("dragleave", endDrag)
 		.on("drop", dropped); 
 </script>
-<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
-<script>
-	if(window.oCom!=undefined){
-		if(window.oCom.who!='pivot')
-			window.oCom=new Com('pivot');
-	} else {
-		window.oCom=new Com('pivot');
-	}
-</script>
+
 		<!--
 				pvTitle: Top Players (>={{ratio_thresold}}%MS) ranking for Automation Markets {{size}} $Bn
 				pvCurrency: figures currency
@@ -673,18 +664,14 @@ var justPivot = function() {
 		 <button type="button" class="cancel">Cancel</button>
 	</div>
 </dialog>
-    </body>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCbYerYJ_7B3KvaBXKmG8SOBpHThGIzPqw",
-    authDomain: "maricard-d4a7c.firebaseapp.com",
-    databaseURL: "https://maricard-d4a7c.firebaseio.com",
-    projectId: "maricard-d4a7c",
-    storageBucket: "",
-    messagingSenderId: "1004273872017"
-  };
-  firebase.initializeApp(config);
+	if(window.oCom!=undefined){
+		if(window.oCom.who!='pivot')
+			window.oCom=new Com('pivot');
+	} else {
+		window.oCom=new Com('pivot');
+	}
 </script>
+    </body>
 </html>

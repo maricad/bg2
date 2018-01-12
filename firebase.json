@@ -1,24 +1,16 @@
 {
-  "database": {
-    "rules": "database-rules.json"
-  },
-  "storage": {
-    "rules": "storage.rules"
-  },
+  "name": "Business Graphs",
+  "short_name": "Business Graphs",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
   "hosting": {
     "public": "./",
     "ignore": [
       "firebase.json",
-      "database-rules.json",
-      "storage.rules",
+      "**/.*",
+      "**/node_modules/**",
       "functions"
-    ],
-    "headers": [{
-      "source" : "**/*.@(js|html)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=0"
-      } ]
-    }]
+    ]
   }
 }
