@@ -16,7 +16,7 @@ function Com(who){
   firebase.initializeApp(this.config);
   this.initFirebase();
   var items = window.location.search.substr(1).split("&");
-  for(int i=0; i<items.length;i++){
+  for(var i=0; i<items.length;i++){
 	  var temp = items[i].split("=");
 	  if(temp[0]="comuid"){
 		  this.channel = temp[1];
