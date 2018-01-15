@@ -18,8 +18,9 @@ function Com(who){
   var items = window.location.search.substr(1).split("&");
   for(var i=0; i<items.length;i++){
 	  var temp = items[i].split("=");
-	  if(temp[0]="comuid"){
+	  if(temp[0]=="comuid"){
 		  this.channel = temp[1];
+		  break;
 	  }
   }
   // monitor channel commands
